@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpronus=self.webpackChunkpronus||[]).push([[4174],{7181:e=>{e.exports=JSON.parse('{"permalink":"/pronus/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

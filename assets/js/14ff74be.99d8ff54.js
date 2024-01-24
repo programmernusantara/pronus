@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpronus=self.webpackChunkpronus||[]).push([[4637],{5880:s=>{s.exports=JSON.parse('{"label":"hola","permalink":"/pronus/blog/tags/hola","allTagsPath":"/pronus/blog/tags","count":1,"unlisted":false}')}}]);
