@@ -1,4 +1,35 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
+
+final Uri _github = Uri.parse('https://github.com/programmernusantara');
+final Uri _linkedin =
+    Uri.parse('https://www.linkedin.com/in/programmernusantara');
+final Uri _tikTok = Uri.parse('https://www.tiktok.com/@programmernusantara');
+final Uri _youtube = Uri.parse('https://www.youtube.com/@programmernusantara');
+
+Future<void> github(Uri url) async {
+  if (!await launchUrl(_github)) {
+    throw Exception('Could not launch $_github');
+  }
+}
+
+Future<void> tikTok(Uri url) async {
+  if (!await launchUrl(_tikTok)) {
+    throw Exception('Could not launch $_tikTok');
+  }
+}
+
+Future<void> youtube(Uri url) async {
+  if (!await launchUrl(_youtube)) {
+    throw Exception('Could not launch $_youtube');
+  }
+}
+
+Future<void> linkedin(Uri url) async {
+  if (!await launchUrl(_linkedin)) {
+    throw Exception('Could not launch $_linkedin');
+  }
+}
 
 class Profile extends StatelessWidget {
   const Profile({super.key});
@@ -14,9 +45,7 @@ class Profile extends StatelessWidget {
         children: [
           const CircleAvatar(
             radius: 60,
-            backgroundImage: AssetImage(
-              'assets/navbar/it.png',
-            ),
+            backgroundImage: AssetImage('assets/navbar/it.png'),
           ),
           const Text(
             "Assalamu'alaikum, I'm Wildan",
@@ -50,58 +79,40 @@ class Profile extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              GestureDetector(
-                child: const Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 8.0),
-                  child: Image(
-                    image: AssetImage('assets/sosmed/github.png'),
-                    width: 30.0,
-                    height: 30.0,
-                  ),
+              IconButton(
+                icon: const Image(
+                  image: AssetImage('assets/sosmed/github.png'),
+                  width: 30.0,
+                  height: 30.0,
                 ),
+                onPressed: () => github(_github),
               ),
-              GestureDetector(
-                child: const Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 8.0),
-                  child: Image(
-                    image: AssetImage('assets/sosmed/linkedin.png'),
-                    width: 30.0,
-                    height: 30.0,
-                  ),
+              IconButton(
+                icon: const Image(
+                  image: AssetImage('assets/sosmed/linkedin.png'),
+                  width: 30.0,
+                  height: 30.0,
                 ),
+                onPressed: () => linkedin(_linkedin),
               ),
-              GestureDetector(
-                child: const Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 8.0),
-                  child: Image(
-                    image: AssetImage('assets/sosmed/tik-tok.png'),
-                    width: 30.0,
-                    height: 30.0,
-                  ),
+              IconButton(
+                icon: const Image(
+                  image: AssetImage('assets/sosmed/tik-tok.png'),
+                  width: 30.0,
+                  height: 30.0,
                 ),
+                onPressed: () => tikTok(_tikTok),
               ),
-              GestureDetector(
-                child: const Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 8.0),
-                  child: Image(
-                    image: AssetImage('assets/sosmed/youtube.png'),
-                    width: 30.0,
-                    height: 30.0,
-                  ),
+              IconButton(
+                icon: const Image(
+                  image: AssetImage('assets/sosmed/youtube.png'),
+                  width: 30.0,
+                  height: 30.0,
                 ),
+                onPressed: () => youtube(_youtube),
               ),
-              GestureDetector(
-                child: const Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 8.0),
-                  child: Image(
-                    image: AssetImage('assets/sosmed/phone.png'),
-                    width: 30.0,
-                    height: 30.0,
-                  ),
-                ),
-              )
             ],
-          )
+          ),
         ],
       ),
     );
