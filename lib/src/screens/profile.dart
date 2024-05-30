@@ -44,8 +44,8 @@ class Profile extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           const CircleAvatar(
-            radius: 60,
-            backgroundImage: AssetImage('assets/navbar/it.png'),
+            radius: 80,
+            backgroundImage: AssetImage('assets/sosmed/wildan.jpg'),
           ),
           const Text(
             "Assalamu'alaikum, I'm Wildan",

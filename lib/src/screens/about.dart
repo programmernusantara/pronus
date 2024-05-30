@@ -42,7 +42,7 @@ class About extends StatelessWidget {
           Divider(color: Colors.black),
           SizedBox(height: 10),
           Text(
-            'Saya telah mengenal dan jatuh cinta dengan dunia komputer sejak usia 12 tahun. Ketertarikan saya terhadap pelajaran seperti Matematika, Fisika, Kimia, dan Elektronika, telah membantu saya memahami berbagai aspek hardware komputer dengan lebih mendalam. Pada usia 15 tahun, saya mulai mempelajari dunia pemrograman menggunakan bahasa C++, yang membuka jalan bagi saya untuk mendalami software engineering. Kini, di usia 19 tahun, saya memiliki pemahaman yang komprehensif tentang hardware dan software komputer, dan saya fokus pada pengembangan perangkat lunak.',
+            'Saya telah mengenal dengan dunia komputer sejak usia 12 tahun. Ketertarikan saya terhadap pelajaran seperti Matematika, Fisika, Kimia, dan Elektronika, telah membantu saya memahami berbagai aspek hardware komputer dengan lebih mendalam. Pada usia 15 tahun, saya mulai mempelajari dunia pemrograman menggunakan bahasa C++, yang membuka jalan bagi saya untuk mendalami software engineering. Kini, di usia 19 tahun, saya memiliki pemahaman yang komprehensif tentang hardware dan software komputer, dan saya fokus pada pengembangan perangkat lunak.',
             style: TextStyle(
               fontSize: 16.0,
               color: Colors.black,
