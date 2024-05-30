@@ -15,7 +15,7 @@ class Profile extends StatelessWidget {
           const CircleAvatar(
             radius: 60,
             backgroundImage: AssetImage(
-              'assets/sosmed/anonymous.png',
+              'assets/navbar/it.png',
             ),
           ),
           const Text(
