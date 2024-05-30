@@ -6,7 +6,8 @@ class Project extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(20.0),
+      padding: const EdgeInsets.all(10.0),
+      margin: const EdgeInsets.all(10.0),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20.0),
         color: Colors.black.withOpacity(0.1),
@@ -25,7 +26,7 @@ class Project extends StatelessWidget {
           ),
           SizedBox(height: 10),
           Text(
-            'Hai! Saya Wildan Firmani Quraisi, seorang Software Engineer berusia 19 tahun dengan passion mendalam di bidang teknologi. Sejak mengenal komputer pada usia 12 tahun, saya terus mengasah keterampilan saya hingga mencapai posisi profesional ini. Dengan pengalaman dalam berbagai proyek dan pemahaman mendalam tentang bahasa pemrograman, saya selalu bersemangat menghadapi tantangan baru. Saya berkomitmen untuk terus belajar dan berkontribusi dalam dunia teknologi. Saya percaya pada kerja keras dan inovasi, dan siap membawa solusi kreatif dan efektif dalam setiap proyek yang saya tangani.',
+            'Saya telah mengenal dan jatuh cinta dengan dunia komputer sejak usia 12 tahun. Ketertarikan saya terhadap pelajaran seperti Matematika, Fisika, Kimia, dan Elektronika, telah membantu saya memahami berbagai aspek hardware komputer dengan lebih mendalam. Pada usia 15 tahun, saya mulai mempelajari dunia pemrograman menggunakan bahasa C++, yang membuka jalan bagi saya untuk mendalami software engineering. Kini, di usia 19 tahun, saya memiliki pemahaman yang komprehensif tentang hardware dan software komputer, dan saya fokus pada pengembangan perangkat lunak.',
             style: TextStyle(
               fontSize: 16.0,
               color: Colors.black,

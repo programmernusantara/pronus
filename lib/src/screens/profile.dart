@@ -7,11 +7,17 @@ class Profile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.white,
-      padding: const EdgeInsets.all(5.0),
+      padding: const EdgeInsets.all(10.0),
+      margin: const EdgeInsets.all(10.0),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-    
+          const CircleAvatar(
+            radius: 60,
+            backgroundImage: AssetImage(
+              'assets/sosmed/anonymous.png',
+            ),
+          ),
           const Text(
             "Assalamu'alaikum, I'm Wildan",
             textAlign: TextAlign.center,

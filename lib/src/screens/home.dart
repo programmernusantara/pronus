@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pronus/src/screens/about.dart';
 import 'package:pronus/src/screens/profile.dart';
+import 'package:pronus/src/screens/project.dart';
 import 'package:pronus/src/screens/skills.dart';
 
 class Home extends StatefulWidget {
@@ -84,6 +85,8 @@ class _HomeState extends State<Home> {
           const Expanded(child: Profile()),
           Expanded(
               child: Container(
+            padding: const EdgeInsets.all(10.0),
+            margin: const EdgeInsets.all(10.0),
             color: Colors.white,
             child: ListView(
               children: const [
@@ -91,7 +94,7 @@ class _HomeState extends State<Home> {
                 SizedBox(height: 10),
                 Skills(),
                 SizedBox(height: 10),
-                Skills()
+                Project()
               ],
             ),
           ))
