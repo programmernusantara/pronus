@@ -57,7 +57,7 @@ class Project extends StatelessWidget {
           ),
           const SizedBox(height: 10), // Jarak antara gambar dan judul
           const Text(
-            "Portofolio saya adalah aplikasi web full-stack yang dibangun menggunakan Dart Flutter untuk frontend dan Go Fiber untuk backend. Dengan basis data MySQL dan pengelolaan kontainer menggunakan Docker, proyek ini menawarkan tampilan UI yang modern dan performa backend yang cepat. Didesain untuk memamerkan kemampuan teknis saya dalam pengembangan aplikasi web serta kemampuan saya dalam membangun dan memelihara infrastruktur backend yang andal dan efisien.",
+            'Proyek ini adalah sebuah situs web portofolio yang dikembangkan menggunakan Dart dan Flutter. Tujuan utama dari proyek ini adalah untuk membuat platform yang elegan dan responsif di mana saya bisa menampilkan karya-karya saya sebagai seorang Software Engineer. Situs ini dirancang untuk memudahkan perekrut, klien, dan profesional lain dalam melihat profil saya, proyek-proyek yang telah saya kerjakan, serta menghubungi saya melalui berbagai platform media sosial.',
             style: TextStyle(
               fontSize: 16.0,
               color: Colors.black,
