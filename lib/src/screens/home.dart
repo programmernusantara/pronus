@@ -29,17 +29,17 @@ class _HomeState extends State<Home> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black87,
-        leading: Container(
-          decoration: const BoxDecoration(),
-          padding: const EdgeInsets.all(1.0),
-          child: const Image(
-            image: AssetImage('assets/navbar/it.png'),
+        leading: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Image.asset(
+            'assets/navbar/it.png',
             color: Colors.white,
           ),
         ),
         title: const Text(
           'Pronus',
-          style: TextStyle(color: Colors.white),
+          style: TextStyle(
+              color: Colors.white, fontSize: 24, fontWeight: FontWeight.bold),
         ),
         actions: [
           TextButton(
@@ -47,36 +47,36 @@ class _HomeState extends State<Home> {
               child: const Text(
                 'About',
                 style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 15,
-                ),
+                    color: Colors.white,
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold),
               )),
           TextButton(
               onPressed: () {},
               child: const Text(
                 'Skills',
                 style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 15,
-                ),
+                    color: Colors.white,
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold),
               )),
           TextButton(
               onPressed: () {},
               child: const Text(
                 'Project',
                 style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 15,
-                ),
+                    color: Colors.white,
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold),
               )),
           TextButton(
               onPressed: () {},
               child: const Text(
                 'Login',
                 style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 15,
-                ),
+                    color: Colors.white,
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold),
               )),
         ],
       ),

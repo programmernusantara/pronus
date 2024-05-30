@@ -66,6 +66,7 @@ flutter:
     - assets/navbar/
     - assets/sosmed/
     - assets/skills/
+    - assets/project/
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
