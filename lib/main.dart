@@ -13,6 +13,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         textTheme: GoogleFonts.titilliumWebTextTheme(),
+        primaryColor: Colors.black87,
+        scaffoldBackgroundColor: Colors.white,
       ),
       home: const Home(),
     );

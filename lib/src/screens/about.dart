@@ -1,52 +1,32 @@
-// src/screens/about.dart
 import 'package:flutter/material.dart';
+
+import '../widgets/container.dart';
 
 class About extends StatelessWidget {
   const About({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.all(20.0),
-      margin: const EdgeInsets.all(20.0),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(20.0),
-        color: Colors.white,
-        boxShadow: [
-          BoxShadow(
-            color: Colors.grey.withOpacity(0.5),
-            spreadRadius: 2,
-            blurRadius: 5,
-            offset: const Offset(0, 3),
-          ),
-        ],
-      ),
-      child: const Column(
+    return const CustomContainer(
+      child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Row(
-            children: [
-              Icon(Icons.person, color: Colors.black, size: 30),
-              SizedBox(width: 10),
-              Text(
-                "About Me",
-                style: TextStyle(
-                  fontSize: 24.0,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.black,
-                ),
-              ),
-            ],
+          Text(
+            "About Me",
+            style: TextStyle(
+              fontSize: 24.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
+            ),
           ),
           SizedBox(height: 10),
           Divider(color: Colors.black),
           SizedBox(height: 10),
           Text(
-            'Saya telah mengenal dengan dunia komputer sejak usia 12 tahun. Ketertarikan saya terhadap pelajaran seperti Matematika, Fisika, Kimia, dan Elektronika, telah membantu saya memahami berbagai aspek hardware komputer dengan lebih mendalam. Pada usia 15 tahun, saya mulai mempelajari dunia pemrograman menggunakan bahasa C++, yang membuka jalan bagi saya untuk mendalami software engineering. Kini, di usia 19 tahun, saya memiliki pemahaman yang komprehensif tentang hardware dan software komputer, dan saya fokus pada pengembangan perangkat lunak.',
+            'Sejak usia 12 tahun, saya sudah tertarik dengan komputer. Ketertarikan awal pada hardware komputer diperkuat oleh minat saya yang tertarik dengan pelajaran matematika, fisika, kimia, dan elektronika. Dengan semangat belajar yang tak pernah padam, saya berhasil memahami jaringan komputer secara menyeluruh di usia 15 tahun. Pada usia 18 tahun, saya merambah dunia pemrograman, mempelajari pengembangan perangkat lunak dari sisi client dan server. Kini, di usia 19 tahun, saya fokus pada pengembangan perangkat lunak dengan tekad kuat untuk terus berinovasi dan memberikan kontribusi terbaik. Saya percaya bahwa perjalanan ini baru permulaan, dan saya bersemangat untuk melihat sejauh mana saya bisa melangkah dalam industri teknologi.',
             style: TextStyle(
-              fontSize: 16.0,
+              fontSize: 16,
               color: Colors.black,
-              height: 1.5,
             ),
           ),
         ],
