@@ -8,6 +8,8 @@ final Uri _linkedin =
     Uri.parse('https://www.linkedin.com/in/programmernusantara');
 final Uri _tikTok = Uri.parse('https://www.tiktok.com/@programmernusantara');
 final Uri _youtube = Uri.parse('https://www.youtube.com/@programmernusantara');
+final Uri _cv = Uri.parse(
+    'https://drive.google.com/drive/folders/1qh6BaCsAEFwO0AiCO68MeNvLUDOnsA7q?usp=sharing');
 
 Future<void> _launchUrl(Uri url) async {
   if (!await launchUrl(url)) {
@@ -40,9 +42,7 @@ class Profile extends StatelessWidget {
       ),
       const SizedBox(height: 20),
       ElevatedButton(
-        onPressed: () {
-          // Tambahkan fungsi untuk men-download CV
-        },
+        onPressed: () => _launchUrl(_cv),
         style: ElevatedButton.styleFrom(
           backgroundColor: Colors.white,
           padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
