@@ -23,7 +23,7 @@ class About extends StatelessWidget {
           Divider(color: Colors.black),
           SizedBox(height: 10),
           Text(
-            'Sejak usia 12 tahun, saya sudah tertarik dengan komputer. Ketertarikan awal pada hardware komputer diperkuat oleh minat saya yang tertarik dengan pelajaran matematika, fisika, kimia, dan elektronika. Dengan semangat belajar yang tak pernah padam, saya berhasil memahami jaringan komputer secara menyeluruh di usia 15 tahun. Pada usia 18 tahun, saya merambah dunia pemrograman, mempelajari pengembangan perangkat lunak dari sisi client dan server. Kini, di usia 19 tahun, saya fokus pada pengembangan perangkat lunak dengan tekad kuat untuk terus berinovasi dan memberikan kontribusi terbaik. Saya percaya bahwa perjalanan ini baru permulaan, dan saya bersemangat untuk melihat sejauh mana saya bisa melangkah dalam industri teknologi.',
+            'Sejak umur 12 tahun, saya tertarik pada dunia komputer, khususnya hardware, berkat ketertarikan saya pada matematika, fisika, kimia, dan elektronika. Pada usia 15 tahun, saya sudah menguasai jaringan komputer secara mendalam. Saat mencapai usia 18 tahun, saya mulai menjelajahi dunia pemrograman, mempelajari pengembangan perangkat lunak dari sisi client dan server. Sekarang, di usia 19 tahun, saya berfokus pada pengembangan perangkat lunak, Saya percaya ini adalah awal yang menjanjikan, dan saya penuh semangat untuk terus tumbuh dan berkembang dalam industri teknologi.',
             style: TextStyle(
               fontSize: 16,
               color: Colors.black,
