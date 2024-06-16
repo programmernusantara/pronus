@@ -42,7 +42,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (BuildContext context, BoxConstraints constraints) {
-        if (constraints.maxWidth > 600) {
+        if (constraints.maxWidth > 850) {
           return _layarBesar();
         } else {
           return _layarKecil();
